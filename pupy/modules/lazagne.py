@@ -21,10 +21,10 @@ class LaZagne(PupyModule):
             'whole', 'sqlite3', 'xml', 'calendar',
             'ConfigParser', 'lazagne', 'pyasn1'
         ],
-        'linux': [
+        "linux": [
             'secretstorage', 'crypt'
         ],
-        'windows': [
+        "windows": [
             'sqlite3.dll', 'pypykatz'
         ],
     }

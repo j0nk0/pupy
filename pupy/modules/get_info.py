@@ -9,8 +9,8 @@ __class_name__="GetInfo"
 class GetInfo(PupyModule):
     """ get some informations about one or multiple clients """
     dependencies = {
-        'windows': ['pupwinutils.security'],
-        'android': ['pupydroid.utils']
+        "windows": ['pupwinutils.security'],
+        "android": ['pupydroid.utils']
     }
 
     @classmethod

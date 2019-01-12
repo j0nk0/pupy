@@ -180,7 +180,7 @@ class BypassUAC(PupyModule):
         else:
             self.info('Using current executable')
             exe = self.client.desc['exec_path'].split('\\')
-            if exe[len(exe)-1].lower() in ['powershell.exe', 'cmd.exe'] and exe[1].lower() == 'windows':
+            if exe[len(exe)-1].lower() in ['powershell.exe', 'cmd.exe'] and exe[1].lower() == "windows":
                 self.warning('It seems that your current process is %s' % self.client.desc['exec_path'])
                 self.warning('It is not recommended to restart it')
                 return

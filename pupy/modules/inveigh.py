@@ -13,7 +13,7 @@ class Inveigh(PupyModule):
         execute Inveigh commands
     """
     dependencies = {
-        'windows': ['powershell']
+        "windows": ['powershell']
     }
 
     known_args = True

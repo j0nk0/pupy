@@ -8,7 +8,7 @@ from magic import Magic
 
 __class_name__="FStat"
 
-@config(cat='admin', compat=['windows', 'linux'])
+@config(cat='admin', compat=["windows", "linux"])
 class FStat(PupyModule):
     '''Show a bit more info about file path. ACLs/Caps/Owner for now'''
 
@@ -16,8 +16,8 @@ class FStat(PupyModule):
         'all': [
             'pupyutils', 'fsutils', 'fsutils_ext'
         ],
-        'windows': ['junctions', 'ntfs_streams'],
-        'linux': ['xattr', 'posix1e', 'prctl', '_prctl']
+        "windows": ['junctions', 'ntfs_streams'],
+        "linux": ['xattr', 'posix1e', 'prctl', '_prctl']
     }
 
     @classmethod

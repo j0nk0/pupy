@@ -33,12 +33,12 @@ def as_unicode(x):
     else:
         return unicode(x)
 
-@config(cat='admin', compatibilities=['windows'])
+@config(cat='admin', compatibilities=["windows"])
 class reg(PupyModule):
     '''Search/list/get/set/delete registry keys/values '''
 
     dependencies = {
-        'windows': ['reg']
+        "windows": ['reg']
     }
 
     @classmethod

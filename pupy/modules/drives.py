@@ -7,14 +7,14 @@ from modules.lib import size_human_readable
 
 __class_name__="Drives"
 
-@config(category='admin', compatibilities=['windows', 'posix', 'darwin'])
+@config(category='admin', compatibilities=["windows", "posix", "darwin"])
 class Drives(PupyModule):
     """ List valid drives in the system """
 
     dependencies={
         'all': ['psutil'],
-        'posix': ['mount'],
-        'windows': [
+        "posix": ['mount'],
+        "windows": [
             'win32api', 'win32com', 'pythoncom',
             'winerror', 'wmi', 'pupwinutils.drives'
         ],

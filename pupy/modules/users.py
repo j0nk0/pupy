@@ -5,12 +5,12 @@ from pupylib.PupyOutput import Color, Table
 
 __class_name__="Users"
 
-@config(cat="gather", compatibilities=['windows', 'linux', 'darwin', 'posix'])
+@config(cat="gather", compatibilities=["windows", "linux", "darwin", "posix"])
 class Users(PupyModule):
     """ Get interactive users """
 
     dependencies = {
-        'windows': ['win32net', 'win32api'],
+        "windows": ['win32net', 'win32api'],
         'all': ['pupyutils.users']
     }
 

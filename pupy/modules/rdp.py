@@ -5,12 +5,12 @@ from threading import Event
 
 __class_name__="Rdp"
 
-@config(cat="admin", compatibilities=['windows', 'linux', 'darwin'])
+@config(cat="admin", compatibilities=["windows", "linux", "darwin"])
 class Rdp(PupyModule):
     """ Enable / Disable rdp connection or check for valid credentials on a remote host """
 
     dependencies = {
-        'windows': ['pupwinutils.rdp'],
+        "windows": ['pupwinutils.rdp'],
         'all': [
             'pupyutils.rdp_check', 'impacket', 'calendar', 'OpenSSL'
         ]

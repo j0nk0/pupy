@@ -13,7 +13,7 @@ class Powerview(PupyModule):
         execute powerview commands
     """
     dependencies = {
-        'windows': ['powershell']
+        "windows": ['powershell']
     }
 
 

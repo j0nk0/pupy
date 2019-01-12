@@ -27,7 +27,7 @@ class DownloaderScript(PupyModule):
 
     dependencies = {
         'all': ['transfer', 'scandir', 'zipfile', 'tarfile'],
-        'windows': ['junctions']
+        "windows": ['junctions']
     }
 
     @classmethod

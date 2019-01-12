@@ -123,7 +123,7 @@ class GetSystem(PupyModule):
         if args.restart:
             self.info('Trying to configure for running the current executable on the target as SYSTEM')
             exe = self.client.desc['exec_path'].split('\\')
-            if exe[len(exe)-1].lower() in ['powershell.exe', 'cmd.exe'] and exe[1].lower() == 'windows':
+            if exe[len(exe)-1].lower() in ['powershell.exe', 'cmd.exe'] and exe[1].lower() == "windows":
                 self.warning('It seems that your current process is %s' % self.client.desc['exec_path'])
                 self.warning('It is not recommended to restart it')
                 return

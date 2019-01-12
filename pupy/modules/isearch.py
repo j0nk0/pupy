@@ -15,7 +15,7 @@ def escape(x):
 
     return "'" + x + "'"
 
-@config(cat='gather', compat='windows')
+@config(cat='gather', compat="windows")
 class IndexSearchModule(PupyModule):
     ''' Use Windows Search Index to search for data '''
 

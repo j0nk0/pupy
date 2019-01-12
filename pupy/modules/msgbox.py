@@ -4,12 +4,12 @@ from pupylib.PupyModule import config, PupyModule, PupyArgumentParser
 
 __class_name__="MsgBoxPopup"
 
-@config(cat="troll", tags=["message","popup"], compatibilities=['windows', 'linux', 'darwin'])
+@config(cat="troll", tags=["message","popup"], compatibilities=["windows", "linux", "darwin"])
 class MsgBoxPopup(PupyModule):
     """ Pop up a custom message box """
     dependencies = {
-        'windows': ['pupwinutils.msgbox'],
-        'linux': ['dbus', 'notify'],
+        "windows": ['pupwinutils.msgbox'],
+        "linux": ['dbus', 'notify'],
     }
 
     @classmethod

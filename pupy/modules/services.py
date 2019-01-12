@@ -11,13 +11,13 @@ LIKELY_KNOWN = (
     'wmpnetwk.exe', 'SearchIndexer.exe'
 )
 
-@config(cat='admin', compat=['windows','linux'])
+@config(cat='admin', compat=["windows","linux"])
 class Services(PupyModule):
     """ list services """
 
     dependencies = {
-        'windows': ['pupyps'],
-        'linux': ['dbus', 'services']
+        "windows": ['pupyps'],
+        "linux": ['dbus', 'services']
     }
 
     @classmethod

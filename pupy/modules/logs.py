@@ -6,12 +6,12 @@ from pupylib.PupyOutput import TruncateToTerm, List, Color, Line
 from datetime import datetime
 
 __class_name__='Logs'
-@config(cat='admin', compat=['posix', 'windows'])
+@config(cat='admin', compat=["posix", "windows"])
 class Logs(PupyModule):
     ''' Show logs (or try to search something) '''
 
     dependencies = {
-        'posix': ['readlogs_generic'],
+        "posix": ['readlogs_generic'],
         'all': ['readlogs']
     }
 

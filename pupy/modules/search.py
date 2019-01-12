@@ -19,8 +19,8 @@ class SearchModule(PupyModule):
             'pupyutils.search', 'scandir', 'transfer',
             'zipfile', 'tarfile', 'fsutils', 'scandir'
         ],
-        'windows': ['junctions', 'ntfs_streams', 'pupwinutils', '_scandir'],
-        'linux': ['xattr', '_scandir']
+        "windows": ['junctions', 'ntfs_streams', 'pupwinutils', '_scandir'],
+        "linux": ['xattr', '_scandir']
     }
 
     terminate = None

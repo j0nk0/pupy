@@ -59,7 +59,7 @@ class SSHell(PupyModule):
         PupyModule.init(self, args)
 
     def run(self, args):
-        if 'linux' not in sys.platform:
+        if "linux" not in sys.platform:
             raise NotImplementedError('Interactive shell is not supported for this platform')
 
         # Hooks

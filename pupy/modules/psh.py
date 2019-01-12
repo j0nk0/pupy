@@ -9,12 +9,12 @@ from rpyc import GenericException
 
 __class_name__ = 'PowershellManager'
 
-@config(compat='windows', category='admin')
+@config(compat="windows", category='admin')
 class PowershellManager(PupyModule):
     ''' Load/Execute Powershell scripts '''
 
     dependencies = {
-        'windows': ['powershell']
+        "windows": ['powershell']
     }
 
     @classmethod

@@ -8,7 +8,7 @@ __class_name__ = "GetHwUuid"
 class GetHwUuid(PupyModule):
     """ Try to get UUID (DMI) or machine-id (dbus/linux) """
     dependencies = {
-        'windows': ['win32api', 'win32com', 'pythoncom', 'winerror'],
+        "windows": ['win32api', 'win32com', 'pythoncom', 'winerror'],
         'all': ['hwuuid']
     }
 

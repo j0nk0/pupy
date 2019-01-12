@@ -14,7 +14,7 @@ class ShellExec(PupyModule):
 
     dependencies = {
         'all': ['pupyutils.safepopen'],
-        'windows': ['pupwinutils.processes']
+        "windows": ['pupwinutils.processes']
     }
 
     terminate = None

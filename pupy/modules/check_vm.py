@@ -4,7 +4,7 @@ from pupylib.PupyModule import config, PupyModule, PupyArgumentParser
 
 __class_name__="CheckVM"
 
-@config(category="gather", compatibilities=['windows', 'linux', 'darwin'])
+@config(category="gather", compatibilities=["windows", "linux", "darwin"])
 class CheckVM(PupyModule):
     """ check if running on Virtual Machine """
 

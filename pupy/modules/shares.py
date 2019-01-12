@@ -10,7 +10,7 @@ class Shares(PupyModule):
     """ List local and remote shared folder and permission """
 
     dependencies = {
-        'windows': [
+        "windows": [
             'win32api', 'win32com', 'pythoncom',
             'winerror', 'wmi', 'pupwinutils.drives',
         ],

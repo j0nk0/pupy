@@ -9,7 +9,7 @@ __events__ = {
     USNIPER_EVENT: 'usniper'
 }
 
-@config(cat='gather', compat=['linux'])
+@config(cat='gather', compat=["linux"])
 class USniper(PupyModule):
     ''' Globally capture string or register during execution at specified
         physical offset and register using uprobes. Compatible with
@@ -17,7 +17,7 @@ class USniper(PupyModule):
 
     unique_instance = True
     dependencies = {
-        'linux': ['usniper']
+        "linux": ['usniper']
     }
 
     @classmethod

@@ -8,7 +8,7 @@ import logging
 
 __class_name__="LastModule"
 
-@config(cat='admin', compat=['linux'])
+@config(cat='admin', compat=["linux"])
 class LastModule(PupyModule):
     """ list terminal sessions """
 

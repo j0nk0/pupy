@@ -10,10 +10,10 @@ class Beroot(PupyModule):
     """Check for privilege escalation path"""
 
     dependencies = {
-        'linux': [
+        "linux": [
             'beroot'
         ],
-        'windows': [
+        "windows": [
             'pyexpat', 'xml', '_elementtree', 'xml.etree', 'impacket', 'impacket.examples', 'beroot'
         ]
     }

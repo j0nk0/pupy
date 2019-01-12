@@ -129,7 +129,7 @@ class IndexHandler(RequestHandler):
     def get(self):
         self.render('rdesktop/index.html', port=self.client.pupsrv.pupweb.port)
 
-@config(category="admin", tags=["rdesktop","rdp", "vnc", "remote", "desktop"], compat=['windows', 'linux', 'darwin'])
+@config(category="admin", tags=["rdesktop","rdp", "vnc", "remote", "desktop"], compat=["windows", "linux", "darwin"])
 class RemoteDesktopModule(PupyModule):
     """ Start a remote desktop session using a browser websocket client """
 
